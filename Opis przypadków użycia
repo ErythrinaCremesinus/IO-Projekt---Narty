@@ -1,0 +1,112 @@
+4.1.1. Opisy tekstowe aktorów
+    Klient: Osoba fizyczna korzystająca z usług wypożyczalni lub serwisu. Jej głównym celem jest pozyskanie sprawnego sprzętu do użytku lub przywrócenie sprawności własnemu ekwipunkowi. Wchodzi w interakcje z niemal każdym etapem procesu operacyjnego.
+
+    Serwisant: Pracownik merytoryczny odpowiedzialny za stronę techniczną. Wykonuje prace manualne (konserwacja, naprawa), doradza klientom w kwestiach bezpieczeństwa oraz dba o prawidłowe dopasowanie parametrów sprzętu do cech fizycznych użytkownika.
+
+    Kasjer: Pracownik administracyjno-finansowy. Odpowiada za formalną stronę transakcji – weryfikację dokumentów, zawieranie umów najmu oraz rozliczanie płatności. Pełni rolę kontrolną nad przepływem gotówki w punkcie.
+
+    Manager: Osoba odpowiedzialna za zaplecze biznesowe i logistyczne. Nie uczestniczy bezpośrednio w obsłudze pojedynczego klienta, lecz zarządza zasobami (magazyn, personel) i strategią cenową, zapewniając ciągłość pracy punktu.
+
+4.1.2. Opisy tekstowe wybranych przypadków użycia
+1. Podpisanie umowy najmu
+    Aktorzy: Klient, Kasjer.
+
+    Ciąg zdarzeń (podstawowy):
+
+        Klient deklaruje chęć wypożyczenia wybranego wcześniej sprzętu.
+
+        Kasjer prosi o dokument tożsamości w celu weryfikacji.
+
+        Kasjer wprowadza dane klienta do systemu i generuje treść umowy.
+
+        Klient zapoznaje się z regulaminem i składa podpis na dokumentach.
+
+        Kasjer potwierdza zawarcie umowy w systemie.
+
+    Ciąg zdarzeń (alternatywny):
+
+        Brak dokumentu: Klient nie posiada dokumentu tożsamości – Kasjer odmawia podpisania umowy, proces zostaje przerwany.
+
+        Błędne dane: Klient zgłasza błąd w danych w wydrukowanej umowie – Kasjer koryguje dane w systemie i ponownie drukuje dokument.
+
+    Częstotliwość i czas:
+
+        Częstotliwość: Wysoka (przy każdym wypożyczeniu).
+
+        Spiętrzenia: Weekendy, poranki w sezonie zimowym/wakacyjnym.
+
+        Czas realizacji: Typowy: 3–5 min; Maksymalny: 10 min.
+
+    Wartość dla aktorów:
+
+        Klient: Uzyskanie prawa do legalnego korzystania z mienia wypożyczalni.
+
+        Kasjer: Formalne zabezpieczenie sprzętu i dopełnienie procedur firmowych.
+
+2. Mierzenie i dopasowanie sprzętu
+    Aktorzy: Klient, Serwisant.
+
+    Ciąg zdarzeń (podstawowy):
+
+        Serwisant przeprowadza wywiad z Klientem dotyczący umiejętności i preferencji.
+
+        Serwisant dokonuje doboru rozmiaru (np. butów, nart).
+
+        Klient przymierza sprzęt.
+
+        Serwisant wykonuje regulację wiązań i parametrów bezpieczeństwa zgodnie z wagą i wzrostem Klienta.
+
+        Serwisant zatwierdza gotowość sprzętu do wydania.
+
+    Ciąg zdarzeń (alternatywny):
+
+        Brak rozmiaru: Sugerowany rozmiar jest niedostępny – Serwisant proponuje alternatywny model sprzętu o zbliżonych parametrach.
+
+        Dyskomfort klienta: Klient zgłasza ucisk/niewygodę – powrót do kroku 2 i wybór innego egzemplarza.
+
+    Częstotliwość i czas:
+
+        Częstotliwość: Bardzo wysoka.
+
+        Spiętrzenia: Godziny otwarcia punktu, wymiana turnusów.
+
+        Czas realizacji: Typowy: 10–15 min; Maksymalny: 30 min (przy trudnym dopasowaniu).
+
+    Wartość dla aktorów:
+
+        Klient: Gwarancja komfortu i bezpieczeństwa podczas użytkowania sprzętu.
+
+        Serwisant: Pewność, że wydawany sprzęt jest skonfigurowany zgodnie z normami technicznymi.
+
+3. Naprawa i konserwacja
+    Aktorzy: Serwisant (Klient jako inicjator przyjęcia).
+
+    Ciąg zdarzeń (podstawowy):
+
+        Serwisant dokonuje inspekcji dostarczonego sprzętu.
+
+        Wykonanie niezbędnych napraw mechanicznych.
+
+        Przeprowadzenie konserwacji: ostrzenie krawędzi oraz woskowanie na gorąco/zimno.
+
+        Kontrola jakości wykonanej usługi.
+
+        Oznaczenie sprzętu jako "gotowy do odbioru" w systemie.
+
+    Ciąg zdarzeń (alternatywny):
+
+        Wykrycie poważnej usterki: Serwisant stwierdza, że koszt naprawy przewyższa wartość sprzętu – kontakt z Klientem i wstrzymanie prac do decyzji właściciela.
+
+    Częstotliwość i czas:
+
+        Częstotliwość: Średnia.
+
+        Spiętrzenia: Przed sezonem oraz po okresach intensywnych opadów/mrozów.
+
+        Czas realizacji: Typowy: 24h (w systemie warsztatowym); Maksymalny: 72h.
+
+    Wartość dla aktorów:
+
+        Klient: Odświeżony, sprawny technicznie sprzęt gotowy do jazdy.
+
+        Serwisant: Realizacja zadań technicznych, utrzymanie standardów jakości serwisu.
