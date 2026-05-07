@@ -5,7 +5,7 @@
 
     Kasjer: Pracownik administracyjno-finansowy. Odpowiada za formalną stronę transakcji – weryfikację dokumentów, zawieranie umów najmu oraz rozliczanie płatności. Pełni rolę kontrolną nad przepływem gotówki w punkcie.
 
-    Manager: Osoba odpowiedzialna za zaplecze biznesowe i logistyczne. Nie uczestniczy bezpośrednio w obsłudze pojedynczego klienta, lecz zarządza zasobami (magazyn, personel) i strategią cenową, zapewniając ciągłość pracy punktu.
+    Administrator: Osoba odpowiedzialna za zaplecze biznesowe i logistyczne. Nie uczestniczy bezpośrednio w obsłudze pojedynczego klienta, lecz zarządza zasobami (magazyn, personel) i strategią cenową, zapewniając ciągłość pracy punktu.
 
     System: Aktor ten zajmuje się obliczaniem siły wypięcia DIN na każdego klienta po wpisaniu przez serwisanta wszystkich potrzebnych danych.
 
