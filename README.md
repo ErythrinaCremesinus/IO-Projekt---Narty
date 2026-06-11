@@ -73,13 +73,9 @@ Zrzuty ekranów prezentujące przykładowe widoki systemu, m.in.:
 ### `Figma`
 Plik z linkiem do makiety/prototypu interfejsu przygotowanego w Figma.
 
-### `Linki`
-Dodatkowe linki projektowe, np. do diagramu przypadków użycia w Miro.
-
 ## Materiały projektowe
 
 - **Figma:** plik `Figma` zawiera link do makiety interfejsu,
-- **Miro:** plik `Linki` zawiera link do diagramu przypadków użycia,
 - **Diagramy UML:** dostępne w katalogach `DIAGRAMY/` oraz `pu_umlet/`,
 - **Zrzuty ekranów:** dostępne w katalogu `screenshoty/`.
 
@@ -97,18 +93,3 @@ Na podstawie dostępnych screenów projekt przewiduje następujące moduły inte
 - statystyki,
 - powiadomienia,
 - zmiana stanowiska.
-
-## Charakter repozytorium
-
-To repozytorium ma charakter dokumentacyjno-projektowy. Zawiera przede wszystkim materiały analityczne i projektowe przygotowane w ramach projektu systemu informatycznego dla wypożyczalni narciarskiej.
-
-## Możliwe dalsze rozszerzenia README
-
-W przyszłości README można uzupełnić o:
-
-- opis technologii użytych do implementacji,
-- instrukcję uruchomienia aplikacji,
-- opis architektury systemu,
-- role użytkowników i uprawnienia,
-- scenariusze testowe,
-- informacje o autorach projektu.
